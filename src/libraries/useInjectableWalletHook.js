@@ -16,7 +16,8 @@ import {
   TransactionUnspentOutput,
   TransactionUnspentOutputs,
   TransactionWitnessSet,
-  Value
+  Value,
+  CoinSelectionStrategyCIP2
 } from '@emurgo/cardano-serialization-lib-asmjs';
 import AssetFingerprint from '@emurgo/cip14-js';
 import EventEmitter from 'eventemitter2';
@@ -332,7 +333,7 @@ const useInjectableWalletHook = (supportingWallets, expectedNetworkId) => {
       // Find the available UTXOs in the wallet and
       // us them as Inputs
       const txUnspentOutputs = await getTxUnspentOutputs();
-      txBuilder.add_inputs_from(txUnspentOutputs, 3);
+      txBuilder.add_inputs_from(txUnspentOutputs, CoinSelectionStrategyCIP2.LargestFirstMultiAsset);
 
       // calculate the min fee required and send any change to an address
       txBuilder.add_change_if_needed(shelleyChangeAddress);
