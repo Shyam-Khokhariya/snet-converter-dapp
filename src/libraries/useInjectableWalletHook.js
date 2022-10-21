@@ -333,7 +333,7 @@ const useInjectableWalletHook = (supportingWallets, expectedNetworkId) => {
       // Find the available UTXOs in the wallet and
       // us them as Inputs
       const txUnspentOutputs = await getTxUnspentOutputs();
-      txBuilder.add_inputs_from(txUnspentOutputs, CoinSelectionStrategyCIP2.LargestFirstMultiAsset);
+      txBuilder.add_inputs_from(txUnspentOutputs, CoinSelectionStrategyCIP2.RandomImproveMultiAsset);
 
       // calculate the min fee required and send any change to an address
       txBuilder.add_change_if_needed(shelleyChangeAddress);

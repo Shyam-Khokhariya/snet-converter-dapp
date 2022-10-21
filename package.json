@@ -6,7 +6,7 @@
     "react-app-rewired": "^2.1.11",
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
-    "@emurgo/cardano-serialization-lib-asmjs": "^10.2.0",
+    "@emurgo/cardano-serialization-lib-asmjs": "^11.1.0",
     "@emurgo/cip14-js": "^3.0.1",
     "@ethersproject/bytes": "^5.5.0",
     "@mui/icons-material": "^5.2.5",
