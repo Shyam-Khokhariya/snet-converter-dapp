@@ -21,12 +21,12 @@ export const supportedCardanoWallets = [
     logo: NamiWallet,
     site: 'https://namiwallet.io/'
   },
-  // {
-  //   wallet: 'Eternal',
-  //   identifier: 'eternal',
-  //   logo: EternalWallet,
-  //   site: 'https://eternl.io/'
-  // },
+  {
+    wallet: 'Eternl',
+    identifier: 'eternl',
+    logo: EternalWallet,
+    site: 'https://eternl.io/'
+  },
   {
     wallet: 'Gero Wallet',
     identifier: 'gerowallet',
