@@ -144,7 +144,7 @@ const useInjectableWalletHook = (supportingWallets, expectedNetworkId) => {
         throw new Error('Invalid network id selected');
       }
 
-      listenEvents(injectedWallet);
+      // listenEvents(injectedWallet);
 
       return injectedWallet;
     } catch (error) {
